@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Gmail Events Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, intuitive web interface for visualizing and managing events automatically extracted from your Gmail inbox. This project is the **frontend companion** to the [Gmail Events backend](https://github.com/Burgundy800020/gmail_events), which uses AI to scan your emails, extract event details, and make them available via a robust API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 What is Gmail Events?
 
-### `npm start`
+**Gmail Events** is an intelligent automation tool that leverages AI to scan your Gmail inbox, extract structured event information (title, date, time, location, items to bring), and seamlessly present it in a user-friendly calendar view. Never miss an important meeting, appointment, or social event buried in your inbox again!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository provides the **React-based frontend** for the system, allowing you to:
+- Instantly view your upcoming events in a weekly calendar.
+- See all extracted details (name, time, location, items to bring) at a glance.
+- Enjoy a clean, responsive, and modern UI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🖥️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 19** – Modern, component-based UI
+- **React Big Calendar** – Beautiful, interactive calendar display
+- **Axios** – Robust HTTP client for API communication
+- **Moment.js** – Date/time formatting
+- **Jest & React Testing Library** – Reliable unit testing
+- **Create React App** – Hassle-free project setup and build
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v16+ recommended)
+- **npm** (v8+ recommended)
+- A running instance of the [Gmail Events backend](https://github.com/Burgundy800020/gmail_events) (see backend README for setup)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚡ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/yourusername/gmail_events_frontend.git
+   cd gmail_events_frontend/gmail_events
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Configure backend connection:**
+   - By default, the frontend expects the backend API at `http://localhost:8000` (see `src/api.js`).
+   - If your backend runs elsewhere, update the `BACKEND_BASE_URL` in `src/api.js` accordingly.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   The app will open at [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🗓️ Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Automatic Event Display:**
+  - Fetches events from the backend and displays them in a weekly calendar.
+  - Each event shows name, time, location, and items to bring.
+- **Live Updates:**
+  - Events are loaded on page refresh; backend updates are reflected instantly.
+- **Responsive Design:**
+  - Works great on desktop and mobile browsers.
+- **Easy Integration:**
+  - Connects seamlessly to the [Gmail Events backend](https://github.com/Burgundy800020/gmail_events).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Running Tests
 
-### Analyzing the Bundle Size
+Run the test suite with:
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
+MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📢 Acknowledgements
+- [Gmail Events backend](https://github.com/Burgundy800020/gmail_events)
+- React, React Big Calendar, Axios, Moment.js
+- OpenAI, Google Cloud
