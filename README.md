@@ -1,12 +1,12 @@
-# Gmail Events Frontend
+# Gmail Events (Frontend)
 
-A modern, intuitive web interface for visualizing and managing events automatically extracted from your Gmail inbox. This project is the **frontend companion** to the [Gmail Events backend](https://github.com/Burgundy800020/gmail_events), which uses AI to scan your emails, extract event details, and make them available via a robust API.
+A modern, intuitive web interface for visualizing and managing events automatically extracted from your Gmail inbox. This project is the **frontend companion** to the [Gmail Events (backend)](https://github.com/Burgundy800020/gmail_events), which uses LLM's to scan your emails, extract event details, and make them available via a robust API.
 
 ---
 
-## 🚀 What is Gmail Events?
+## What is Gmail Events?
 
-**Gmail Events** is an intelligent automation tool that leverages AI to scan your Gmail inbox, extract structured event information (title, date, time, location, items to bring), and seamlessly present it in a user-friendly calendar view. Never miss an important meeting, appointment, or social event buried in your inbox again!
+**Gmail Events** is an intelligent automation tool that leverages LLM's to scan your Gmail inbox, extract structured event information (title, date, time, location, items to bring), and seamlessly present it in a user-friendly calendar view. Never miss an important meeting, appointment, or social event buried in your inbox again!
 
 This repository provides the **React-based frontend** for the system, allowing you to:
 - Instantly view your upcoming events in a weekly calendar.
@@ -15,18 +15,18 @@ This repository provides the **React-based frontend** for the system, allowing y
 
 ---
 
-## 🖥️ Technologies Used
+## Requirements
 
-- **React 19** – Modern, component-based UI
-- **React Big Calendar** – Beautiful, interactive calendar display
-- **Axios** – Robust HTTP client for API communication
+- **React 19** – Component-based UI
+- **React Big Calendar** – Interactive calendar display
+- **Axios** – HTTP client for API communication
 - **Moment.js** – Date/time formatting
 - **Jest & React Testing Library** – Reliable unit testing
 - **Create React App** – Hassle-free project setup and build
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 - **Node.js** (v16+ recommended)
 - **npm** (v8+ recommended)
@@ -34,7 +34,7 @@ This repository provides the **React-based frontend** for the system, allowing y
 
 ---
 
-## ⚡ Getting Started
+## Getting Started
 
 1. **Clone this repository:**
    ```bash
@@ -48,18 +48,16 @@ This repository provides the **React-based frontend** for the system, allowing y
    ```
 
 3. **Configure backend connection:**
-   - By default, the frontend expects the backend API at `http://localhost:8000` (see `src/api.js`).
-   - If your backend runs elsewhere, update the `BACKEND_BASE_URL` in `src/api.js` accordingly.
+   - Update the `BACKEND_BASE_URL` in `src/api.js`.
 
 4. **Start the development server:**
    ```bash
    npm start
    ```
-   The app will open at [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 🗓️ Features
+##  Features
 
 - **Automatic Event Display:**
   - Fetches events from the backend and displays them in a weekly calendar.
@@ -73,22 +71,15 @@ This repository provides the **React-based frontend** for the system, allowing y
 
 ---
 
-## 🧪 Running Tests
+---
 
-Run the test suite with:
-```bash
-npm test
-```
+## Contributing
+
+For contributions, issues, and feature requests, please open an issue or submit a pull request.
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
-
----
-
-## 📄 License
+## License
 
 MIT License.
 
@@ -96,5 +87,3 @@ MIT License.
 
 ## 📢 Acknowledgements
 - [Gmail Events backend](https://github.com/Burgundy800020/gmail_events)
-- React, React Big Calendar, Axios, Moment.js
-- OpenAI, Google Cloud
